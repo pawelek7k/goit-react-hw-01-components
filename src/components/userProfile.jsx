@@ -1,4 +1,4 @@
-export const userProfile = () => {
+export const UserProfile = () => {
   return (
     <>
       <div className="profile">
