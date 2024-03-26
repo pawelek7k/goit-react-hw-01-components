@@ -1,6 +1,8 @@
-import user from "../user.json";
+import data from "../json/data.json";
+import user from "../json/user.json";
 import "./App.css";
-import { UserProfile } from "./Profile/UserProfile";
+import { UserProfile } from "./components/Profile/UserProfile";
+import { Statistics } from "./components/Statistics/Statistics";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics data={data} />
     </>
   );
 }

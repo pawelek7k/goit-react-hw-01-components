@@ -12,18 +12,12 @@ export const UserProfile = ({ username, tag, location, avatar, stats }) => {
         </div>
 
         <ul className="stats">
-          <li>
-            <span className="label">Followers</span>
-            <span className="quantity">{stats.followers}</span>
-          </li>
-          <li>
-            <span className="label">Views</span>
-            <span className="quantity">{stats.views}</span>
-          </li>
-          <li>
-            <span className="label">Likes</span>
-            <span className="quantity">{stats.likes}</span>
-          </li>
+          {Object.entries(stats).map(([label, quantity]) => (
+            <li key={label}>
+              <span className="label">{label}</span>
+              <span className="quantity">{quantity}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </>
