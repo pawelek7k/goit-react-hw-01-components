@@ -1,4 +1,9 @@
-export const UserProfile = () => {
+type UserProfileProps = {
+  username: string,
+};
+
+export const UserProfile = (props: UserProfileProps) => {
+  const { username } = props;
   return (
     <>
       <div className="profile">
@@ -8,7 +13,7 @@ export const UserProfile = () => {
             alt="User avatar"
             className="avatar"
           />
-          <p className="name">Petra Marica</p>
+          <p className="name"></p>
           <p className="tag">@pmarica</p>
           <p className="location">Salvador, Brasil</p>
         </div>
