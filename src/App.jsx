@@ -20,12 +20,7 @@ function App() {
       />
       <Statistics data={data} />
       <FriendsList friends={friends} />
-      <TransactionHistory
-        id={transactions.id}
-        currency={transactions.currency}
-        type={transactions.type}
-        amount={transactions.type}
-      />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 }
