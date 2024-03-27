@@ -1,6 +1,8 @@
 import data from "../json/data.json";
+import friends from "../json/friends.json";
 import user from "../json/user.json";
 import "./App.css";
+import { FriendsList } from "./components/FriendList/FriendList";
 import { UserProfile } from "./components/Profile/UserProfile";
 import { Statistics } from "./components/Statistics/Statistics";
 
@@ -15,6 +17,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics data={data} />
+      <FriendsList friends={friends} />
     </>
   );
 }
