@@ -37,7 +37,6 @@ const ProfileContainer = styled.div`
   }
 
   .stats {
-    list-style-type: none;
     display: flex;
     gap: 3rem;
     align-items: center;
