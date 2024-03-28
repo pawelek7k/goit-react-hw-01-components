@@ -1,15 +1,10 @@
 import styled from "styled-components";
 
 const ProfileContainer = styled.div`
-  display: flex;
-  align-items: center;
   background-color: #f9f9f9;
-  padding: 20px;
-  flex-direction: column;
+  padding: 2rem 3.5rem;
   border-radius: 2rem;
-  width: 20rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  justify-content: center;
 
   .description {
     .avatar {
@@ -20,7 +15,6 @@ const ProfileContainer = styled.div`
     .name {
       font-size: 20px;
       font-weight: bold;
-      margin-bottom: 5px;
       color: #000000ba;
       letter-spacing: 2px;
       text-align: center;
